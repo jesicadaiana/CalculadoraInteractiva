@@ -1,7 +1,35 @@
+* {
+    margin: 0;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    top: 0;
+}
+
+.text_bienvenida {
+    color:  rgb(234, 234, 234);
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+    transition: .7 all ease-in;
+    animation-iteration-count: infinite;
+}
+
+.text_bienvenida:hover {
+    color: rgb(228, 3, 115);
+}
+
+
 body {
+        background-image: url(univ.avif);
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
           height: 100vh;
           margin: 0;
           font-family: 'Arial', sans-serif;
