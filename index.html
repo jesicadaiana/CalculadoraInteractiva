@@ -8,7 +8,7 @@
 </head>
 <body>
             <nav>
-                    <h1a class="text_bienvenida"> Bienvenido a la calculadora </h1>
+                <div class="hit-the-floor">Bienvenido a la calculadora </div>
             </nav>
 
             <main>
@@ -16,23 +16,28 @@
                 <!-- Calculadora masa corporal-->
                 <div class="calc_imc">
                     <h1>Calculadora del IMC para adultos: Sistema métrico</h1>
-                    <p>La presente herramienta calcula el Índice de Masa Corporal (IMC) y determina la categoría de peso correspondiente. Está diseñada para su uso en adultos de 20 años en adelante. Para calcular el IMC en niños y adolescentes de 2 a 19 años, le recomendamos utilizar la Calculadora de IMC específica para este grupo etario.
-                    </p>
+                    <p>La presente herramienta calcula el Índice de Masa Corporal (IMC) y determina la categoría de peso correspondiente. Está diseñada para su uso en adultos de 20 años en adelante. Para calcular el IMC en niños y adolescentes de 2 a 19 años, le recomendamos utilizar la Calculadora de IMC específica para este grupo etario.</p>
                     <div class="botones_imc">
-                        <input type="number" id="buttonPrimerNro">
-                        <input type="number" id="buttonPrimerNro">
-                        <button class="calcularIMC" onclick="calcularIMC"> Calcular IMC </button>
+                        <input type="number" id="buttonPrimerNro" placeholder="Ingrese su estatura en metros">
+                        <input type="number" id="buttonSegundoNro" placeholder="Ingrese su peso en kilogramos">
+                        <button class="calcularIMC" onclick="calcularIMC()">Calcular IMC</button>
                     </div>
+                    <div class="resultado">                    
+                        <p>Su Índice es: <span id="resultado_imc"></span></p>
+                    </div>
+                    <p>
+                        <h3>Composición corporal Índice de masa corporal (IMC)</h3> 
+                        Peso inferior al normal Menos de 18.5<br>
+                        Normal 18.5 – 24.9 <br>
+                        Peso superior al normal 25.0 – 29.9 <br>
+                        Obesidad Más de 30.0 <br>
+                    </p>
                 </div>
-                <p>
-                    <h3>Composición corporal	Índice de masa corporal (IMC) </h3> 
-                    Peso inferior al normal	Menos de 18.5<br>
-                    Normal	18.5 – 24.9 <br>
-                    Peso superior al normal	25.0 – 29.9 <br>
-                    Obesidad	Más de 30.0 <br>
-                </p>
 
 
+                <div>
+                    <button onclick="saludar ()">HOLA </button>
+                </div>
                     <!-- Calculadora -->
                     <div class="calculator">
                               <div class="display" id="display"></div>

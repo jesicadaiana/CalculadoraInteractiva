@@ -14,10 +14,27 @@ nav {
     color:  rgb(234, 234, 234);
     padding: 20px;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     transition: .7 all ease-in;
     animation-iteration-count: infinite;
 }
+
+.hit-the-floor {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
+    
+    .hit-the-floor {
+      text-align: center;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+    }
+
 
 .text_bienvenida:hover {
     color: rgb(228, 3, 115);
@@ -34,12 +51,27 @@ body {
           font-family: 'Arial', sans-serif;
       }
 
-      .calc_imc {
 
+/*Seccion IMC*/
+
+      .calc_imc {
         padding: 20px;
       }
+
+      .resultado {
+        margin: 20px auto;
+        border: 2px solid #fff;
+        background-color: lightblue;
+        padding: 30px;
+        text-align:left ;
+      }
       
+
+
+
+/*Calculadora */
       .calculator {
+        width: 90%;
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 10px;
@@ -76,3 +108,11 @@ body {
           background-color: rgb(128, 178, 190);
       }
       
+    @media screen {
+        .calculator {
+
+        }
+    } 
+    {
+        
+    }
