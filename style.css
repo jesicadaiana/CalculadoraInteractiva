@@ -25,15 +25,18 @@ nav {
 
 
 body {
-        background-image: url(univ.avif);
+    background-color: lightgoldenrodyellow;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-          height: 100vh;
           margin: 0;
           font-family: 'Arial', sans-serif;
-          background-color: lightsalmon;
+      }
+
+      .calc_imc {
+
+        padding: 20px;
       }
       
       .calculator {
@@ -58,7 +61,7 @@ body {
           min-height: 50px;
       }
       
-      .button {
+    .button_calc {
           grid-column: span 1;
           padding: 10px;
           font-size: 1.2em;
@@ -69,7 +72,7 @@ body {
           transition: background-color 0.3s ease;
       }
       
-      .button:hover {
-          background-color: #eaeaea;
+      .button_calc:hover {
+          background-color: rgb(128, 178, 190);
       }
       
